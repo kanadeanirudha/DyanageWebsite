@@ -1,0 +1,136 @@
+﻿@{
+    Html.RenderPartial("_Header");
+}
+<div role="main" class="main">
+    <section class="page-header page-header-modern custom-page-header-style-1 bg-color-primary page-header-lg mb-0">
+        <div class="container container-xl-custom py-5">
+            <div class="row">
+                <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
+                    <h1 class="font-weight-extra-bold text-14 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">CONTACT US</h1>
+                </div>
+                <div class="col-md-4 order-1 order-md-2 align-self-center">
+                    <ul class="breadcrumb d-block text-md-end breadcrumb-light appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section border-0 py-0 m-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 px-0">
+                    <div class="d-flex flex-column justify-content-center bg-color-dark h-100 p-5">
+                        <div class="row justify-content-center pt-2 mt-5">
+                            <div class="col-md-10">
+                                <div class="feature-box flex-column flex-xl-row align-items-center align-items-xl-start text-center text-xl-start appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                    <div class="feature-box-icon bg-color-transparent w-auto h-auto pt-0">
+                                        <img src="~/Content/Theme/images/building.png" class="img-fluid" width="95" alt="" />
+                                    </div>
+                                    <div class="feature-box-info ps-2 pt-1">
+                                        <h4 class="text-color-light font-weight-bold text-6">Headquarters</h4>
+                                        <p class="text-color-light opacity-5 font-weight-light custom-text-size-1 pb-2 mb-4">
+                                            Plot No 119, Behind Durga Mandir,
+                                            <br>New Sahakar Nagar, Kharabi Road,
+                                            <br>Hanuman Nagar, Nagpur
+                                            Maharashtra 440024
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
+                                <hr class="bg-color-light opacity-2">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center py-2">
+                            <div class="col-auto text-center mb-4 mb-sm-0 mb-lg-4 mb-xl-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000">
+                                <span class="d-block font-weight-semibold text-center">SUPPORT</span>
+                                <a href="tel:+919823093455" class="text-color-light font-weight-bold text-6">98230 93455</a>
+                            </div>
+                            <div class="col-auto text-center ms-xl-5 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1200">
+                                <span class="d-block font-weight-semibold text-center">SALES</span>
+                                <a href="tel:+919823093455" class="text-color-light font-weight-bold text-6">98230 93455</a>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center pt-2 pb-3 mb-5">
+                            <div class="col-md-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
+                                <hr class="bg-color-light opacity-2">
+                            </div>
+                            <div class="col-md-12 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600">
+                                <span class="d-block font-weight-semibold text-center">SEND AN EMAIL</span>
+                                <a href="/cdn-cgi/l/email-protection#5b363a32371b3f34363a323575383436" class="text-color-light font-weight-bold text-decoration-underline text-5"><span class="__cf_email__" >support@dynage.com</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 px-0">
+
+                    <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
+                    <div id="googlemaps" class="google-map h-100 my-0" style="min-height: 500px;"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section custom-section-full-width bg-color-transparent border-0 mt-1 mb-1" >
+        <div class="container container-xl-custom mt-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="overflow-hidden mb-2">
+                        <span class="d-block font-weight-bold custom-text-color-grey-1 text-center line-height-1 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="300">GET IN TOUCH</span>
+                    </div>
+                    <div class="overflow-hidden mb-4">
+                        <h2 class="text-color-dark font-weight-bold text-center text-8 line-height-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="500">How Can We Help?</h2>
+                    </div>
+                    <p class="custom-text-size-1 text-center mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">Let's start the conversation.</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+                    <form class="contact-form" action="/home/SendEmail" method="POST">
+                        <div class="contact-form-success alert alert-success d-none mt-4">
+                            <strong>Success!</strong> Your message has been sent to us.
+                        </div>
+
+                        <div class="contact-form-error alert alert-danger d-none mt-4">
+                            <strong>Error!</strong> There was an error sending your message.
+                            <span class="mail-error-message text-1 d-block"></span>
+                        </div>
+
+                        <div class="row row-gutter-sm">
+                            <div class="form-group col-lg-6 mb-4">
+                                <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark" name="Name" id="Name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group col-lg-6 mb-4">
+                                <input type="text" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark" name="PhoneNumber" id="PhoneNumber" required placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="row row-gutter-sm">
+                            <div class="form-group col-lg-6 mb-4">
+                                <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark" name="Email" id="Email" required placeholder="Your Email">
+                            </div>
+                            <div class="form-group col-lg-6 mb-4">
+                                <input type="text" value="" data-msg-required="Please enter the country." maxlength="100" class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark" name="Country" id="Country" required placeholder="Country">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col mb-4">
+                                <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control border-0 custom-box-shadow-1 py-3 px-4 h-auto text-3 text-color-dark" name="Message" id="Message" required placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col mb-0">
+                                <button type="submit" class="btn btn-secondary btn-outline text-color-dark font-weight-semibold border-width-4 custom-link-effect-1 text-1 text-xl-3 d-inline-flex align-items-center px-4 py-3" data-loading-text="Loading...">SUBMIT <i class="custom-arrow-icon ms-5"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+@{
+    Html.RenderPartial("_Footer");
+}
