@@ -2221,8 +2221,12 @@
     <Content Include="Content\Theme\images\logo-8.png" />
     <Content Include="Content\Theme\images\logo-9.png" />
     <Content Include="Content\Theme\images\logo-light.png" />
-    <Content Include="Content\Theme\images\logo.png" />
+    <Content Include="Content\Theme\images\logo.jpeg" />
+    <Content Include="Content\Theme\images\logo2.png" />
     <Content Include="Content\Theme\images\logo1.png" />
+    <Content Include="Content\Theme\images\menu.png" />
+    <Content Include="Content\Theme\images\mission.jpg" />
+    <Content Include="Content\Theme\images\vision.jpg" />
     <Content Include="Content\Theme\images\puzzle-and-dots1.png" />
     <Content Include="Content\Theme\images\twitter.png" />
     <Content Include="Content\Theme\images\up-arrow.png" />
@@ -2334,6 +2338,7 @@
     <Content Include="Views\Home\ContactUs.cshtml" />
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Shared\_Notification.cshtml" />
+    <Content Include="Views\Home\_AboutUsDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
