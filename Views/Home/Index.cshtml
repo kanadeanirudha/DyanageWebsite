@@ -1,23 +1,514 @@
-﻿@{
-    Html.RenderPartial("_Header");
-}
-<div role="main" class="main">
-    @{
-        Html.RenderPartial("_Intro");
-    }
-    @{
-        Html.RenderPartial("_BriefDescription");
-    }
-    @{
-        Html.RenderPartial("_HorizantalLine");
-    }
-    @{
-        Html.RenderPartial("_Services");
-    }
-    @{
-        Html.RenderPartial("_ContactUs");
-    }
-</div>
-@{
-    Html.RenderPartial("_Footer");
-}
+﻿
+<!-- Banner Section -->
+<section class="banner-section banner-one" id="home">
+    <div class="banner-carousel theme-carousel owl-theme owl-carousel"
+         data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+        <!-- Slide Item -->
+        <div class="slide-item" style="
+              background-image: url(images/main-slider/gif3.gif);
+              background-position: center right;
+              background-repeat: no-repeat;
+              background-size: cover;
+            ">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="inner">
+                            <div class="sub-title text-white text-uppercase">
+                                IT Solutions For Seamless Integration
+                            </div>
+                            <h1 class="text-white">
+                                Empowering you to move forward with confidence
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slide Item -->
+        <div class="slide-item" style="
+              background-image: url(images/main-slider/gif3.gif);
+              background-position: center right;
+              background-repeat: no-repeat;
+              background-size: cover;
+            ">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="inner">
+                            <div class="sub-title text-white text-uppercase">
+                                Future-Ready IT solutions
+                            </div>
+                            <h1 class="text-white">
+                                Enabling Smooth Transitions, Ensuring Business Continuity
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slide Item -->
+        <div class="slide-item" style="
+              background-image: url(images/main-slider/gif3.gif);
+              background-position: center right;
+              background-repeat: no-repeat;
+              background-size: cover;
+            ">
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="inner">
+                            <div class="sub-title text-white text-uppercase">
+                                Smart IT Solutions
+                            </div>
+                            <h1 class="text-white">
+                                Simplifying Complexity, Driving Your Growth
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Banner Section -->
+<!--About Section-->
+<section class="about-section" id="about">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <!--Text Column-->
+            <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="sec-title">
+                        <h2>
+                            Let us be your next <strong>Preferred IT Partner</strong>
+                        </h2>
+                    </div>
+
+                    <div class="text-content">
+                        <p>
+                            <strong>Dynage Tech's</strong> offers a comprehensive
+                            portfolio of services that spans the entire infrastructure
+                            and software development lifecycle. Our solutions include
+                            Managed Services, Network Security, Application Security
+                            Assessment, IT Infrastructure Services, Network Protection,
+                            Web Application Development, Mobile App Development and
+                            Software Testing. This diverse array of offerings empowers
+                            organizations to enhance operational efficiency, strengthen
+                            security measures, and drive innovation in their technology
+                            initiatives..
+                        </p>
+                        <ul class="list-style-one">
+                            <li>
+                                <strong>End-to-End IT Solutions:</strong> We provide a
+                                full spectrum of IT services, from development and
+                                infrastructure management to cybersecurity and application
+                                maintenance, ensuring all your technology needs are met
+                                under one roof
+                            </li>
+                            <li>
+                                <strong>Tailored and Scalable Solutions:</strong> We
+                                understand that every business is unique. Our solutions
+                                are fully customized to meet your specific requirements
+                                and are designed to scale as your business grows.
+                            </li>
+                            <li>
+                                <strong>Proactive Support & Maintenance:</strong> With our
+                                managed services, we provide 24/7 proactive monitoring and
+                                support, ensuring that your systems run smoothly and
+                                downtime is minimized.
+                            </li>
+                            <li>
+                                <strong>Experienced and Certified Experts:</strong> Our
+                                team consists of highly skilled professionals with
+                                certifications in leading technologies, ensuring you
+                                receive expert guidance and top-notch solutions.
+                            </li>
+                            <li>
+                                <strong>Commitment to Innovation:</strong> We stay ahead
+                                of industry trends and leverage the latest technology,
+                                ensuring that your business remains competitive and
+                                adaptable in a constantly evolving digital landscape.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Image Column-->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <!--Images-->
+                    <div class="images">
+                        <div class="row clearfix">
+                            <figure class="image col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0ms"
+                                    data-wow-duration="1500ms">
+                                <img src="images/resource/about-image-1.jpg" alt="" title="" />
+                            </figure>
+                            <figure class="image col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0ms"
+                                    data-wow-duration="1500ms">
+                                <img src="images/resource/about-image-5.jpg" alt="" title="" />
+                            </figure>
+                            <figure class="image col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0ms"
+                                    data-wow-duration="1500ms">
+                                <img src="images/resource/about-image-3.jpg" alt="" title="" />
+                            </figure>
+                            <figure class="image col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0ms"
+                                    data-wow-duration="1500ms">
+                                <img src="images/resource/about-image-4.jpg" alt="" title="" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Services Section-->
+<section class="services-section grey-bg" id="services">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="sec-title wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <h2><strong>Solutions And Focus Areas</strong></h2>
+                    <div class="lower-text">
+                        <strong>Digital Transformation By Dynage Tech</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!--Column-->
+            <div class="column col-lg-4 col-md-12 col-sm-12">
+                <!--Service Block-->
+                <div class="service-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-outer">
+                            <span class="icon-bg"></span>
+                            <div class="icon-box">
+                                <img src="images/icons/services/ManagedServices.png" alt="" title="" />
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="data-infrastructure.html">Managed services</a>
+                        </h3>
+                        <div class="text">
+                            We provide comprehensive managed IT services proactively
+                            monitoring and managing your Infrastructure to ensure
+                            optimal performance, security and continuous business
+                            operation with minimal downtime
+                        </div>
+                        <!-- <div class="more-link"> -->
+                        <!-- <a href="data-infrastructure.html"><span class="fa fa-arrow-right"></span></a> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <!--Service Block-->
+                <div class="service-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-outer">
+                            <span class="icon-bg"></span>
+                            <div class="icon-box">
+                                <img src="images/icons/services/webD.png" alt="" title="" />
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="data-infrastructure.html">Web development</a>
+                        </h3>
+                        <div class="text">
+                            Our expert team delivers dynamic, responsive, and scalable
+                            Web development solutions tailored to your business neeeds,
+                            ensuring a seamless and engaging user experience across all
+                            devices.
+                        </div>
+                        <!-- <div class="more-link"> -->
+                        <!-- <a href="data-infrastructure.html"><span class="fa fa-arrow-right"></span></a> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--Column-->
+            <div class="column col-lg-4 col-md-12 col-sm-12">
+                <!--Service Block-->
+                <div class="service-block wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-outer">
+                            <span class="icon-bg"></span>
+                            <div class="icon-box">
+                                <img src="images/icons/services/ITConsulting.png" alt="" title="" />
+                            </div>
+                        </div>
+                        <h3><a href="cloud-integration.html">IT Consulting</a></h3>
+                        <div class="text">
+                            Our expert IT consultancy services provide strategic
+                            guidance and innovative solutions, helping you align
+                            technology with business goals, optimize processes, and
+                            drive digital transformation for long-term sucess.
+                        </div>
+                        <!-- <div class="more-link"> -->
+                        <!-- <a href="cloud-integration.html"><span class="fa fa-arrow-right"></span></a> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <!--Service Block-->
+                <div class="service-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-outer">
+                            <span class="icon-bg"></span>
+                            <div class="icon-box">
+                                <img src="images/icons/services/mobileD.png" alt="" title="" />
+                            </div>
+                        </div>
+                        <h3><a href="it-startup.html">Mobile App Development</a></h3>
+                        <div class="text">
+                            We specialize in creating intuitive, feature-rich mobile
+                            applications for both iOS and Android, designed to enhance
+                            user engagement and drive business growth through innovative
+                            mobile solutions.
+                        </div>
+                        <!-- <div class="more-link"> -->
+                        <!-- <a href="it-startup.html"><span class="fa fa-arrow-right"></span></a> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--Column-->
+            <div class="column col-lg-4 col-md-12 col-sm-12">
+                <!--Service Block-->
+                <div class="service-block wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-outer">
+                            <span class="icon-bg"></span>
+                            <div class="icon-box">
+                                <img src="images/icons/services/ITFacility.png" alt="" title="" />
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="product-engineering.html">Facility Management</a>
+                        </h3>
+                        <div class="text">
+                            Our comprehensive facility management services ensure
+                            seamless operation maintenance and optimization of your
+                            business environment, enbaling enhanced efficiency, safety
+                            and productivity across your physical and technological
+                            assets.
+                        </div>
+                        <!-- <div class="more-link"> -->
+                        <!-- <a href="product-engineering.html"><span class="fa fa-arrow-right"></span></a> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <!--Service Block-->
+                <div class="service-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="icon-outer">
+                            <span class="icon-bg"></span>
+                            <div class="icon-box">
+                                <img src="images/icons/services/QA.png" alt="" title="" />
+                            </div>
+                        </div>
+                        <h3>
+                            <a href="business-security.html">Reliable Quality Assurance</a>
+                        </h3>
+                        <div class="text">
+                            Our comprehensive software testing services ensure your
+                            applications are throughly tested for functionality,
+                            performance and security delivering high-quality, bug-free
+                            software that enhances user experience and business
+                            efficiency.
+                        </div>
+                        <!-- <div class="more-link"> -->
+                        <!-- <a href="business-security.html"><span class="fa fa-arrow-right"></span></a> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Extra Section -->
+<section class="about-info-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <!--Text Column-->
+            <div class="text-column col-lg-8 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="text-content">
+                        <h4 class="font-weight-bold text-quote bg-area-text">
+                            "If you're competitor-focused, you have to wait
+                            until there is a competitor doing something. Being customer-focused allows you to be more pioneering."
+                        </h4>
+                        <p class="author mb-1 mt-3"> Jeff Bezos</p>
+                        <p class="title"> Founder Amazon </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Appointment Section-->
+<section class="appointment-section grey-bg" id="appointment">
+    <div class="pattern-layer"></div>
+
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="text-column col-lg-12 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="sec-title">
+                        <h2>Why Choose <strong>DYNAGE TECH</strong></h2>
+                        <div class="lower-text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Text Column-->
+            <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="content">
+                        <!--Service Block-->
+                        <div class="service-block-two">
+                            <div class="inner-box">
+                                <div class="icon-outer">
+                                    <span class="icon-bg"></span>
+                                    <div class="icon-box">
+                                        <img src="images/icons/services/6.png" alt="" title="" />
+                                    </div>
+                                </div>
+                                <h3><a href="#">Agile & Scalable Development – Fast, adaptive, and future-proof solutions</a></h3>
+                                <div class="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Service Block-->
+                        <div class="service-block-two">
+                            <div class="inner-box">
+                                <div class="icon-outer">
+                                    <span class="icon-bg"></span>
+                                    <div class="icon-box">
+                                        <img src="images/icons/services/7.png" alt="" title="" />
+                                    </div>
+                                </div>
+                                <h3>
+                                    <a href="#">
+                                        Security-First Approach – Built-in cybersecurity measures at every stage
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Text Column-->
+            <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="content">
+                        <!--Service Block-->
+                        <div class="service-block-two">
+                            <div class="inner-box">
+                                <div class="icon-outer">
+                                    <span class="icon-bg"></span>
+                                    <div class="icon-box">
+                                        <img src="images/icons/services/8.png" alt="" title="" />
+                                    </div>
+                                </div>
+                                <h3>
+                                    <a href="#">Industry-Specific Expertise – Proven success in banking, healthcare, and enterprise IT</a>
+                                </h3>
+                                <div class="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Service Block-->
+                        <div class="service-block-two">
+                            <div class="inner-box">
+                                <div class="icon-outer">
+                                    <span class="icon-bg"></span>
+                                    <div class="icon-box"><img src="images/icons/services/9.png" alt="" title=""></div>
+                                </div>
+                                <h3><a href="#">End-to-End Support – From concept to post-deployment maintenance</a></h3>
+                                <div class="text">.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Testimonials Section-->
+<section class="testimonials-section" id="testimonials">
+    <div class="image-layer" style="background-image: url(images/background/image-2.jpg)"></div>
+
+    <div class="auto-container">
+        <div class="carousel-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="testimonial-carousel theme-carousel owl-theme owl-carousel"
+                 data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1024":{ "items" : "1" }}}'>
+                <!--Slide-->
+                <div class="slide-item">
+                    <div class="inner">
+                        <div class="icon-box">
+                            <span class="flaticon-chat-2"></span>
+                        </div>
+                        <div class="title">Best Services from Dynage Tech!</div>
+                        <div class="text">
+                            "Partnering with Dynage Tech for our managed IT services was one of the best decisions we made. Their
+                            proactive approach to monitoring and maintaining our infrastructure has drastically reduced downtime,
+                            and their response time to issues is outstanding. We feel confident knowing our IT operations are in
+                            capable hands, allowing us to focus on growing our business."
+                        </div>
+                        <div class="info">
+                            <div class="name">Swapnil</div>
+                            <div class="designation">IT Manager -</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Slide-->
+                <div class="slide-item">
+                    <div class="inner">
+                        <div class="icon-box">
+                            <span class="flaticon-chat-2"></span>
+                        </div>
+                        <div class="title">Best Services from Dynage Tech!</div>
+                        <div class="text">
+                            "The team at Dynage Tech delivered a top-notch mobile and web application that transformed our user
+                            experience. They understood our requirements, delivered on time, and exceeded our expectations. Their
+                            technical expertise and attention to detail made the entire process smooth and efficient. Highly
+                            recommended!".
+                        </div>
+                        <div class="info">
+                            <div class="name">Amber Jog</div>
+                            <div class="designation">CEO, Powered</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Slide-->
+                <div class="slide-item">
+                    <div class="inner">
+                        <div class="icon-box">
+                            <span class="flaticon-chat-2"></span>
+                        </div>
+                        <div class="title">Best Services from Dynage Tech!</div>
+                        <div class="text">
+                            "Dynage Tech Pvt Ltd delivered a robust software solution that enhanced our efficiency and compliance.
+                            Their expertise, timely delivery and support have been exceptional. We look forward to future collaborations."
+                        </div>
+                        <div class="info">
+                            <div class="name">Prabhat</div>
+                            <div class="designation">IT Manager, Pharma Company</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

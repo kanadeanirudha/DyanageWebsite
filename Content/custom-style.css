@@ -1,0 +1,95 @@
+:root {
+  --primaryColor: #0a3b88;
+  --secondaryColor: #2579ff;
+}
+.theme-primary-text, .main-footer .widget-title h4, .main-footer .social-links li a{color:var(--primaryColor) !important;}
+.text-dark{color:var(--secondaryColor) !important;}
+.text-quote{color:#752864 !important;}
+.header-top-one {
+    background: var(--primaryColor);
+    padding: 0;
+    width: 100%;
+    display: block;
+    height: 16px;
+    border-bottom: none;
+}
+.contact-us.btn {
+    background: #2579ff;
+}
+.banner-carousel .content-box .sub-title:before {
+    border-bottom: 2px solid var(--primaryColor);
+}
+.btn-style-one .btn-title{
+	background: var(--primaryColor);
+}
+.main-header .header-upper {
+    position: absolute;
+    background: #00000042;
+    width: 100%;
+}
+.main-menu .navigation > li:hover > a, .main-menu .navigation > li.current > a {
+    color:  var(--secondaryColor) !important;
+}
+.main-menu .navigation > li:hover:before, .main-menu .navigation > li.current:before{border-color: var(--secondaryColor);}
+.main-menu .navigation > li > a{padding:0;}
+.services-section, .locations-section {padding: 40px 0 0;}
+.about-section .image-column .images:before {
+    background-image: url(../images/icons/theme-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+	
+	-webkit-animation-name: rotateScale;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotateScale;
+    -moz-animation-duration: 20s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: rotateScale;
+    -ms-animation-duration: 20s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: rotateScale;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.about-info-section{
+	background-image: url(../images/resource/bg-custom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	padding: 110px 0px;
+    margin-bottom: 3%;
+}
+.bg-area-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+.author{
+	font-size: 16px;
+    color: #4d4f53;
+    font-weight: 700;
+	line-height: 20px;
+}
+.main-footer .widget-title h4:before{border-bottom:none;}
+.main-footer .widgets-section {padding: 20px 0px;}
+.main-footer .footer-bottom .inner{padding: 10px 0px;}
+.main-footer .links-widget .links li a, .main-footer .about-widget .text, .main-footer .social-links .title, .main-footer .footer-bottom .copyright, .main-footer .footer-bottom .copyright a{color:#222222;}
+.banner-carousel .slide-item{background-color: transparent;}
+.main-header .logo img {
+    position: relative;
+    display: inline-block;
+    max-width: 175px;
+    max-height: 70px;
+    z-index: 1;
+}
+.grey-bg {
+    background: #f1f1f1;
+}
+.appointment-section .service-block-two h3 {
+    font-size: 18px;
+    font-weight: 600;
+}

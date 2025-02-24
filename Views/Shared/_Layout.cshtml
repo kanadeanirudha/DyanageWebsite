@@ -2,67 +2,49 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Dynage Tech Pvt Ltd</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-    <!-- Web Fonts  -->
-    <link id="googleFonts" href="~/Content/Theme/fonts/css.css" rel="stylesheet" type="text/css">
+    <title>DYNAGE TECH PVT LTD</title>
+    <!-- Stylesheets -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <!-- Responsive File -->
+    <link href="~/Content/responsive.css" rel="stylesheet" />
+    <link href="~/Content/custom-style.css" rel="stylesheet" />
 
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="~/Content/Theme/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/all.min.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/animate.compat.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/magnific-popup.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="~/Content/Theme/css/theme.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/theme-elements.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/theme-blog.css">
-    <link rel="stylesheet" href="~/Content/Theme/css/theme-shop.css">
-    <!-- Demo CSS -->
-    <link rel="stylesheet" href="~/Content/Theme/css/demo-it-services.css">
-
-    <!-- Skin CSS -->
-    <link id="skinCSS" rel="stylesheet" href="~/Content/Theme/css/skin-it-services.css">
-
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="~/Content/Theme/css/custom.css">
-    <!-- Theme Toastr CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
-
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    <style>
-        html .scroll-to-top.visible {
-            background-color:transparent;
-        }
-    </style>
+    <!-- Responsive Settings -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 <body>
-    <div class="body">
-        @Html.Partial("_Notification")
-        @RenderBody()
-        @*@Scripts.Render("~/Content/Theme/scripts")*@
-        <!-- Vendor -->
-        <script src="~/Content/Theme/scripts/plugins.min.js"></script>
+    @Html.Partial("_Notification")
+    @{
+        Html.RenderPartial("_Header");
+    }
 
-        <!--Theme Base, Components and Settings-->
-        <script src="~/Content/Theme/scripts/theme.js"></script>
+    @RenderBody();
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="icon"></div>
+        </div>
 
-        <!--Demo-->
-        <script src="~/Content/Theme/scripts/demo-it-services.js"></script>
-
-        <!--Theme Initialization Files-->
-        <script src="~/Content/Theme/scripts/theme.init.js"></script>
-        @*<script src="~/Scripts/toastr.js"></script>*@
-
+        @{
+            Html.RenderPartial("_Footer");
+        }
     </div>
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
-    </body>
-    </html>
+    <!--End pagewrapper-->
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/jquery.fancybox.js"></script>
+    <script src="~/Scripts/owl.js"></script>
+    <script src="~/Scripts/scrollbar.js"></script>
+    <script src="~/Scripts/appear.js"></script>
+    <script src="~/Scripts/wow.js"></script>
+    <script src="~/Scripts/custom-script.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
